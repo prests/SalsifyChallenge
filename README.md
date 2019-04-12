@@ -21,8 +21,8 @@ I mainly used stackoverflow for most of questions and the express website's libr
 
 ### How long did this take?
 
-(1 hour - 1.5 hours) to make the server
-(30 minutes) to make the test script because $RANDOM wasn't working properly and I had to lookup an example
+* (1 hour - 1.5 hours) to make the server
+* (30 minutes) to make the test script because $RANDOM wasn't working properly and I had to lookup an example
 
 Overall - 2 hours
 
