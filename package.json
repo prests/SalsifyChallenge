@@ -1,0 +1,14 @@
+{
+  "name": "salsify",
+  "version": "1.0.0",
+  "description": "Salsify Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo Hi"
+  },
+  "author": "Shayne F. Preston",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
