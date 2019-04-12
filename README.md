@@ -1,6 +1,8 @@
 # SalsifyChallenge
 Salsify API Coding Challenge
 
+NOTE: You have to add your own text file GitHub doesn't like file size over 500mb so I left it out just name it "SpecialTextFile.txt" and put it in same directory as server.js
+
 ## Overview
 
 The objective of this assignment was to develop a server in any language that could handle an HTTP GET request of a line in a file. The response would either be a status of 200 with the coresponding text or a status of 413 if the line was out of bounds.
