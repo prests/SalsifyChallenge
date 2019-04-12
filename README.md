@@ -39,3 +39,7 @@ If I had unlimated time I would try and use a JSON object instead of an array wh
     * curl 127.0.0.1:8082/lines/[linenumber]
     * http://127.0.0.1:8082/lines/200
     * or run ./testing.sh
+
+## Screenshots
+
+![Successful Request](SuccessfulRequest.png)
