@@ -44,12 +44,12 @@ If I had unlimated time I would try and use a JSON object instead of an array wh
 
 <b>NOTE:</b> All Screenshots were taken in Postman but you could use curl or just a browser
 
-###Successful Request
+### Successful Request
 ![Successful Request](SuccessfulRequest.png)
 
 Above you see a successful HTTP GET request the body has the line requested and on the right you see the status is 200
 
-###Bad Request
+### Bad Request
 ![Bad Request](BadRequest.png)
 
 Above you see a bad HTTP GET request the body has nothing in it and on the right you see that status is 413
