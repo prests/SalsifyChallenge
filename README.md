@@ -1,7 +1,7 @@
 # SalsifyChallenge
 Salsify API Coding Challenge
 
-NOTE: You have to add your own text file GitHub doesn't like file size over 500mb so I left it out just name it "SpecialTextFile.txt" and put it in same directory as server.js
+<b>NOTE:</b> You have to add your own text file GitHub doesn't like file size over 500mb so I left it out just name it "SpecialTextFile.txt" and put it in same directory as server.js
 
 ## Overview
 
