@@ -1,0 +1,1 @@
+echo "This script doesn't do anything, thanks Javascript."

@@ -3,14 +3,16 @@ var app = express();
 var fs = require("fs");
 
 app.get('/lines/:line', function (req, res) {
-    console.log(req.params.line);
-    if(req.params.line >= fileArr.length){
-        res.sendStatus(413);
-    }
-    else
-    {
-        res.status(200).end(fileArr[req.params.line]);
-    }
+    setImmediate(function(){
+        console.log(req.params.line);
+        if(req.params.line >= fileArr.length){
+            res.sendStatus(413);
+        }
+        else
+        {
+            res.status(200).end(fileArr[req.params.line]);
+        }
+    })
 })
 
 var server = app.listen(8082, function () {
