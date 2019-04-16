@@ -34,6 +34,8 @@ If I had unlimated time I would try and use a JSON object instead of an array wh
 
 ## How to Execute
 
+This code uses Node.js and Express.js make sure both are installed and a global path is available Node.js
+
 1. the ./build.sh does nothing since javascript doesn't need to be compiled so just run ./run.sh
 2. You then have 3 options.
     * curl 127.0.0.1:8082/lines/[linenumber]

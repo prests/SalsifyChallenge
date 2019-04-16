@@ -11,7 +11,7 @@ var fs = require("fs");
 app.get('/lines/:line', function (req, res) {
     setImmediate(function(){
         console.log(req.params.line);
-        if(req.params.line >= fileArr.length){ //line outside bounds
+        if(req.params.line >= fileArr.length && req.params.line === parseInt(req.params.line)){ //line outside bounds
             res.status(413).end("");
         }
         else //line inside bounds
