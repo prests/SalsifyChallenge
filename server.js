@@ -21,13 +21,23 @@ app.get('/lines/:line', function (req, res) {
     })
 })
 
-var server = app.listen(8082, function () {
-    var host = server.address().address // listen on 127.0.0.1
-    var port = server.address().port //listen on port 8082
-    console.log("Example app listening at http://%s:%s", host, port)
-})
+//Create a read in stream
+var fileArr = [];
+const readStream = fs.createReadStream('./SpecialTextFile.txt');
 
-//Read in file and split into array by '\n'
-var text = fs.readFileSync("./SpecialTextFile.txt").toString('ascii');
-var fileArr = text.split('\n');
-console.log(fileArr.length);
+//Parse file one chunk of data at a time
+readStream.on('data', function(chunk) {
+    const buffer = Buffer.from(chunk);
+    fileArr = fileArr.concat(chunk.toString('ascii').split('\n'));
+});
+
+//File is done parsing start Server
+readStream.on('end', function() {
+    console.log('finished reading text of ' + fileArr.length + " lines");
+    // Start Server
+    var server = app.listen(8082, function () {
+        var host = server.address().address // listen on 127.0.0.1
+        var port = server.address().port //listen on port 8082
+        console.log("Server listening at http://%s:%s", host, port)
+    })
+});
